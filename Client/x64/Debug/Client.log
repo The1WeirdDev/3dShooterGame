@@ -1,0 +1,10 @@
+﻿  Client.cpp
+D:\apps\games\3dShooterGame\Dependencies\stb\include\stb\stb_image.h(366,17): warning C4083: expected '('; found identifier 'disable'
+  Display.cpp
+  Mesh.cpp
+  Time.cpp
+  Generating Code...
+glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb' was not found with 'glew32s.lib(glew.obj)' or at 'D:\apps\games\3dShooterGame\x64\Debug\vc120.pdb'; linking object as if no debug info
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Client.vcxproj -> D:\apps\games\3dShooterGame\x64\Debug\Client.exe
