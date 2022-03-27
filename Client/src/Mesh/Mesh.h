@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
@@ -8,14 +10,16 @@ protected:
 	unsigned int vao_id = 0;
 	unsigned int vertex_count = 0;
 public:
-	virtual void drawMesh();
-	virtual void cleanUp();
+	virtual void DrawMesh();
+	virtual void CleanUp();
 
 public:
-	unsigned int generateVao();
-	unsigned int generateVbo(GLenum type);
+	unsigned int GenerateVao();
+	unsigned int GenerateVbo(GLenum type);
+
+	void StoreDataInAttribute(int attribute, int size, GLenum type, float* data, int data_size);
 
 public:
-	unsigned int getVaoId() { return vao_id; }
-	unsigned int getVertexCount() { return vertex_count; }
+	unsigned int GetVaoId() { return vao_id; }
+	unsigned int GetVertexCount() { return vertex_count; }
 };

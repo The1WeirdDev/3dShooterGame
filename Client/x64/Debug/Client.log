@@ -1,3 +1,6 @@
 ﻿  Client.cpp
 D:\apps\games\3dShooterGame\Dependencies\stb\include\stb\stb_image.h(366,17): warning C4083: expected '('; found identifier 'disable'
+D:\apps\games\3dShooterGame\Client\src\Client.cpp(25,2): warning C4305: 'initializing': truncation from 'double' to 'float'
+  BasicMesh.cpp
+  Generating Code...
   Client.vcxproj -> D:\apps\games\3dShooterGame\x64\Debug\Client.exe

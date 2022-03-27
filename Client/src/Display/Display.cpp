@@ -37,8 +37,6 @@ void Display::CreateWindow(unsigned int width, unsigned int height, const char* 
 		glfwTerminate();
 		std::exit(-1);
 	}
-
-
 }
 
 void Display::DestroyWindow() {
@@ -50,11 +48,11 @@ void Display::PreUpdate() {
 }
 void Display::Prepare() {
 	glClearColor(0.0, 0.5, 1.0, 1.0);
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT);// | GL_DEPTH_BUFFER_BIT);
 
-	glEnable(GL_DEPTH_TEST);
+	//glEnable(GL_DEPTH_TEST);
 }
 void Display::PostUpdate() {
-	glDisable(GL_DEPTH_TEST);
+	//glDisable(GL_DEPTH_TEST);
 	glfwPollEvents();
 }
